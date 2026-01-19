@@ -42,7 +42,7 @@ public:
         temp->next = newnode;
     }
 
-    // Insert at given position (1-based)
+    // Insert at given position
     void insertInMiddle(int x, int pos) {
         if (pos <= 1) {
             insertAtBeginning(x);
@@ -65,7 +65,7 @@ public:
         temp->next = newnode;
     }
 
-    // Delete node at given position (1-based)
+    // Delete node at given position
     void deleteAtPosition(int pos) {
         if (head == nullptr) {
             cout << "List is empty\n";
@@ -146,3 +146,4 @@ int main() {
 
     return 0;
 }
+
